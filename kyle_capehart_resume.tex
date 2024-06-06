@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Kyle Capehart
+% License : MIT
+% Inspired by: https://github.com/arasgungore/arasgungore-CV
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage[default]{lato}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bf\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \color{NavyBlue} Kyle Capehart} \\ \vspace{10pt}
+    \faGlobe \hspace{.5pt} \href{https://kylecapehart.com}{kylecapehart.com}
+    $|$
+    \hspace{.5pt} \href{mailto:kyleacapehart@gmail.com}{kyleacapehart@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/kyle-capehart/}{in/kyle-capehart}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/k-capehart}{k-capehart}
+    $|$
+    \faMapMarker \hspace{.5pt} Orlando, FL
+\end{center}
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Salesforce:}{ Apex, Lightning Web Components, Flows, SOQL, SFDX, Sales Cloud, Service Cloud, Experience Cloud, Pardot } \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ Python, Go, Java, TypeScript, JavaScript, SQL } \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Git, GitHub Actions, Jira } \\ \vspace{3pt}
+
+        \textbf{Leadership:}{ Leading teams, mentoring developers, balancing priorities } \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sr. Software Engineer @ ATD}{Feb 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Technical lead for a team of Salesforce professionals}
+            \resumeItem{Created an automated testing framework with Apex for flows and triggers}
+            \resumeItem{Automated CI/CD pipeline with GitHub Actions to deploy code}
+            \resumeItem{Enabled integration between Salesforce, Jira, and Slack}
+            \resumeItem{Synced customer data between SFDC and micro-services with Python}
+            \resumeItem{Worked on user sign-up service built with Python back-end and Angular front-end}
+            \resumeItem{Helped implement e-commerce solutions in SAP Hybris}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Salesforce Developer @ Deloitte}{July 2019 \textbf{--} Feb 2023}
+        \resumeItemListStart
+            \resumeItem{Led team through architecture meetings}
+            \resumeItem{Oversaw quarterly releases for an application used by the federal government}
+            \resumeItem{Automated data loading tasks using Python REST API wrapper}
+            \resumeItem{Created Lightning Components using LWC and Aura frameworks}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Salesforce Developer Intern @ Siemens}{May 2018 \textbf{--} June 2019}
+        \resumeItemListStart
+            \resumeItem{Maintained a Customer Portal in Experience Cloud for internal product inventory}
+            \resumeItem{Wrote Apex code and VisualForce pages based on requirements from product owners}
+            \resumeItem{Automated data migration in AWS S3 buckets}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Go-Salesforce} $|$ \emph{\href{https://github.com/k-capehart/go-salesforce}{\color{blue}k-capehart/go-salesforce}}}{}
+          \resumeItemListStart
+            \resumeItem{A Salesforce REST API wrapper written in Go}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{SF CLI Plugin} $|$ \emph{\href{https://github.com/k-capehart/kc-sf-plugin}{\color{blue}k-capehart/kc-sf-plugin}}}{}
+          \resumeItemListStart
+            \resumeItem{A custom plugin for the Salesforce CLI that automates apex trigger generation written in TypeScript}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Open Source Contributions}}{}
+          \resumeItemListStart
+            \resumeItem{Contributed to the official Salesforce CLI to implement a new authentication method}
+            \resumeItem{Member of the Lightning Flow Scanner group, a collection of tools used to scan Salesforce flows for best practices}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+%----------- EDUCATION & CERTIFICATIONS -----------
+
+\section{Education \& Certifications}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Central Florida}{}
+      \resumeSubSubheading{B.S. in Computer Science}{Jun 2019}
+    \vspace{7pt}
+
+    \resumeSubheading
+      {Salesforce Certifications}{}
+      \resumeSubSubheading{Platform Developer II}{Mar 2024}
+      \resumeSubSubheading{Platform App Builder}{Oct 2021}
+      \resumeSubSubheading{Administrator}{Aug 2021}
+      \resumeSubSubheading{Platform Developer I}{Aug 2019}
+
+  \resumeSubHeadingListEnd
+
+\end{document}
