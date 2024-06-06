@@ -5,4 +5,4 @@
 Compile locally or use [Overleaf](https://www.overleaf.com/):
 - Download: [LaTeX distribution](https://www.latex-project.org/get/)
 - Install: [LaTeX Workshop VS Code Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
-- compile: `pdflatex resume.tex`
+- compile: `pdflatex kyle_capehart_resume.tex`
